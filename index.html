@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lomakkeen validointi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Rekisteröityminen</h1>
+
+        <form id="registrationForm" novalidate>
+            <div class="form-group">
+                <label for="firstName">Etunimi</label>
+                <input type="text" id="firstName">
+                <span class="error" id="firstNameError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="lastName">Sukunimi</label>
+                <input type="text" id="lastName">
+                <span class="error" id="lastNameError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="userId">Käyttäjä ID</label>
+                <input type="text" id="userId">
+                <span class="error" id="userIdError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Salasana</label>
+                <input type="password" id="password">
+                <span class="error" id="passwordError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Katuosoite</label>
+                <input type="text" id="address">
+                <span class="error" id="addressError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="postalCode">Postinumero</label>
+                <input type="text" id="postalCode">
+                <span class="error" id="postalCodeError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="city">Postitoimipaikka</label>
+                <input type="text" id="city">
+                <span class="error" id="cityError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Sähköposti</label>
+                <input type="text" id="email">
+                <span class="error" id="emailError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="additionalInfo">Lisätietoja</label>
+                <textarea id="additionalInfo" rows="5"></textarea>
+            </div>
+
+            <button type="submit">Tarkista</button>
+            <div id="successMessage" class="success"></div>
+        </form>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
